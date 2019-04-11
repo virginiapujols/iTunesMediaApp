@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F10A18A02260069E00DBAD92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A189F2260069E00DBAD92 /* AppDelegate.swift */; };
 		F10A18A22260069E00DBAD92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18A12260069E00DBAD92 /* ViewController.swift */; };
-		F10A18A52260069E00DBAD92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10A18A32260069E00DBAD92 /* Main.storyboard */; };
 		F10A18A72260069F00DBAD92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10A18A62260069F00DBAD92 /* Assets.xcassets */; };
 		F10A18AA2260069F00DBAD92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10A18A82260069F00DBAD92 /* LaunchScreen.storyboard */; };
 		F10A18B52260069F00DBAD92 /* iTunesMediaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18B42260069F00DBAD92 /* iTunesMediaAppTests.swift */; };
@@ -37,7 +36,6 @@
 		F10A189C2260069E00DBAD92 /* iTunesMediaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesMediaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10A189F2260069E00DBAD92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F10A18A12260069E00DBAD92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F10A18A42260069E00DBAD92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F10A18A62260069F00DBAD92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F10A18A92260069F00DBAD92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F10A18AB2260069F00DBAD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,8 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				F10A189F2260069E00DBAD92 /* AppDelegate.swift */,
-				F10A18A12260069E00DBAD92 /* ViewController.swift */,
-				F10A18A32260069E00DBAD92 /* Main.storyboard */,
+				F10A18CD2260085E00DBAD92 /* Controllers */,
 				F10A18A62260069F00DBAD92 /* Assets.xcassets */,
 				F10A18A82260069F00DBAD92 /* LaunchScreen.storyboard */,
 				F10A18AB2260069F00DBAD92 /* Info.plist */,
@@ -123,6 +120,14 @@
 				F10A18C12260069F00DBAD92 /* Info.plist */,
 			);
 			path = iTunesMediaAppUITests;
+			sourceTree = "<group>";
+		};
+		F10A18CD2260085E00DBAD92 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F10A18A12260069E00DBAD92 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +236,6 @@
 			files = (
 				F10A18AA2260069F00DBAD92 /* LaunchScreen.storyboard in Resources */,
 				F10A18A72260069F00DBAD92 /* Assets.xcassets in Resources */,
-				F10A18A52260069E00DBAD92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F10A18A32260069E00DBAD92 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F10A18A42260069E00DBAD92 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F10A18A82260069F00DBAD92 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
