@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.makeKeyAndVisible()
         
-        let root = MediaContentListController()
+        let root = MediaTabBarViewController()
         let navigationController = UINavigationController(rootViewController: root)
         window?.rootViewController = navigationController
 

@@ -17,6 +17,7 @@
 		F10A18D222600B1800DBAD92 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18D122600B1800DBAD92 /* Request.swift */; };
 		F10A18D422600B6400DBAD92 /* MediaContentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18D322600B6400DBAD92 /* MediaContentRequest.swift */; };
 		F10A18D622600BFF00DBAD92 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18D522600BFF00DBAD92 /* ApiClient.swift */; };
+		F10A18DA2260152400DBAD92 /* MediaTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18D92260152400DBAD92 /* MediaTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		F10A18D122600B1800DBAD92 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		F10A18D322600B6400DBAD92 /* MediaContentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContentRequest.swift; sourceTree = "<group>"; };
 		F10A18D522600BFF00DBAD92 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		F10A18D92260152400DBAD92 /* MediaTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				F10A18A12260069E00DBAD92 /* MediaContentListController.swift */,
+				F10A18D92260152400DBAD92 /* MediaTabBarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				F10A18A02260069E00DBAD92 /* AppDelegate.swift in Sources */,
 				F10A18CF22600A4100DBAD92 /* MediaContent.swift in Sources */,
 				F10A18D622600BFF00DBAD92 /* ApiClient.swift in Sources */,
+				F10A18DA2260152400DBAD92 /* MediaTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

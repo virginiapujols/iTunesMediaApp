@@ -12,19 +12,13 @@ class MediaTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let audioBookController = MediaContentListController(type: "audiobooks/top-audiobooks")
+        let musicController = MediaContentListController(type: "apple-music/coming-soon")
+        
+        audioBookController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        musicController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
+        viewControllers = [audioBookController, musicController]
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
