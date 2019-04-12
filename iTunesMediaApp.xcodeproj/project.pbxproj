@@ -18,6 +18,8 @@
 		F10A18D422600B6400DBAD92 /* MediaContentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18D322600B6400DBAD92 /* MediaContentRequest.swift */; };
 		F10A18D622600BFF00DBAD92 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18D522600BFF00DBAD92 /* ApiClient.swift */; };
 		F10A18DA2260152400DBAD92 /* MediaTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18D92260152400DBAD92 /* MediaTabBarViewController.swift */; };
+		F10A18DC22601A9300DBAD92 /* MediaContentTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18DB22601A9300DBAD92 /* MediaContentTableCell.swift */; };
+		F10A18DF22601DC700DBAD92 /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18DE22601DC700DBAD92 /* ImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		F10A18D322600B6400DBAD92 /* MediaContentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContentRequest.swift; sourceTree = "<group>"; };
 		F10A18D522600BFF00DBAD92 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		F10A18D92260152400DBAD92 /* MediaTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTabBarViewController.swift; sourceTree = "<group>"; };
+		F10A18DB22601A9300DBAD92 /* MediaContentTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContentTableCell.swift; sourceTree = "<group>"; };
+		F10A18DE22601DC700DBAD92 /* ImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,12 +110,14 @@
 			isa = PBXGroup;
 			children = (
 				F10A189F2260069E00DBAD92 /* AppDelegate.swift */,
+				F10A18DE22601DC700DBAD92 /* ImageView+Extension.swift */,
 				F10A18D022600AF000DBAD92 /* Model */,
 				F10A18D7226011D500DBAD92 /* Protocols */,
 				F10A18D8226011E300DBAD92 /* APIManager */,
 				F10A18CD2260085E00DBAD92 /* Controllers */,
-				F10A18A62260069F00DBAD92 /* Assets.xcassets */,
+				F10A18DD22601A9900DBAD92 /* Cells */,
 				F10A18A82260069F00DBAD92 /* LaunchScreen.storyboard */,
+				F10A18A62260069F00DBAD92 /* Assets.xcassets */,
 				F10A18AB2260069F00DBAD92 /* Info.plist */,
 			);
 			path = iTunesMediaApp;
@@ -167,6 +173,14 @@
 				F10A18D522600BFF00DBAD92 /* ApiClient.swift */,
 			);
 			path = APIManager;
+			sourceTree = "<group>";
+		};
+		F10A18DD22601A9900DBAD92 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F10A18DB22601A9300DBAD92 /* MediaContentTableCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +314,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F10A18A22260069E00DBAD92 /* MediaContentListController.swift in Sources */,
+				F10A18DC22601A9300DBAD92 /* MediaContentTableCell.swift in Sources */,
 				F10A18D222600B1800DBAD92 /* Request.swift in Sources */,
 				F10A18D422600B6400DBAD92 /* MediaContentRequest.swift in Sources */,
+				F10A18DF22601DC700DBAD92 /* ImageView+Extension.swift in Sources */,
 				F10A18A02260069E00DBAD92 /* AppDelegate.swift in Sources */,
 				F10A18CF22600A4100DBAD92 /* MediaContent.swift in Sources */,
 				F10A18D622600BFF00DBAD92 /* ApiClient.swift in Sources */,

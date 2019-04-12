@@ -29,23 +29,25 @@ class MediaContentListController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.title = "iTunes Media App"
         requestMediaContent(contentType)
     }
     
-    // MARK:
-    func setupView() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell_media")
+    // MARK: private functions
+    private func setupView() {
+        tableView.register(MediaContentTableCell.self, forCellReuseIdentifier: "cell_media")
         tableView.delegate = self
         tableView.dataSource = self
     }
     
-    func requestMediaContent(_ type:String) {
+    private func requestMediaContent(_ type:String) {
         let request = MediaContentRequest(type: type)
         apiClient.getAllMediaContent(request) { (response) in
             if let feed = response as? MediaFeed {
                 self.mediaList = feed.mediaContent
                 DispatchQueue.main.async {
-                    self.title = feed.title
+                    self.navigationController?.navigationBar.topItem?.title = feed.title
+//                    navigationController?.navigationBar.topItem?.title = "some title"
                     self.tableView.reloadData()
                 }
             }
@@ -53,16 +55,25 @@ class MediaContentListController: UITableViewController {
     }
     
     // MARK: Tableview
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mediaList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell_media", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell_media", for: indexPath) as! MediaContentTableCell
         let currentItem = mediaList[indexPath.row]
         
-        cell.textLabel?.text = currentItem.name
+        cell.nameLabel.text = currentItem.name
+        cell.typeLabel.text = currentItem.type
         
+        if let imageUrl = URL(string: currentItem.imageUrl) {
+            cell.iconImageView.loadFromURL(url: imageUrl)
+        }
+
         return cell
     }
 }

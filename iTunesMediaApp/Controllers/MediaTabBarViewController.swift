@@ -14,7 +14,7 @@ class MediaTabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         let audioBookController = MediaContentListController(type: "audiobooks/top-audiobooks")
-        let musicController = MediaContentListController(type: "apple-music/coming-soon")
+        let musicController = MediaContentListController(type: "tv-shows/top-tv-episodes")
         
         audioBookController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         musicController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
