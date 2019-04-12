@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F10A18A02260069E00DBAD92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A189F2260069E00DBAD92 /* AppDelegate.swift */; };
-		F10A18A22260069E00DBAD92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18A12260069E00DBAD92 /* ViewController.swift */; };
+		F10A18A22260069E00DBAD92 /* MediaContentListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18A12260069E00DBAD92 /* MediaContentListController.swift */; };
 		F10A18A72260069F00DBAD92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10A18A62260069F00DBAD92 /* Assets.xcassets */; };
 		F10A18AA2260069F00DBAD92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10A18A82260069F00DBAD92 /* LaunchScreen.storyboard */; };
 		F10A18B52260069F00DBAD92 /* iTunesMediaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A18B42260069F00DBAD92 /* iTunesMediaAppTests.swift */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		F10A189C2260069E00DBAD92 /* iTunesMediaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesMediaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10A189F2260069E00DBAD92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F10A18A12260069E00DBAD92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F10A18A12260069E00DBAD92 /* MediaContentListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContentListController.swift; sourceTree = "<group>"; };
 		F10A18A62260069F00DBAD92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F10A18A92260069F00DBAD92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F10A18AB2260069F00DBAD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,10 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				F10A189F2260069E00DBAD92 /* AppDelegate.swift */,
-				F10A18D122600B1800DBAD92 /* Request.swift */,
-				F10A18D322600B6400DBAD92 /* MediaContentRequest.swift */,
-				F10A18D522600BFF00DBAD92 /* ApiClient.swift */,
 				F10A18D022600AF000DBAD92 /* Model */,
+				F10A18D7226011D500DBAD92 /* Protocols */,
+				F10A18D8226011E300DBAD92 /* APIManager */,
 				F10A18CD2260085E00DBAD92 /* Controllers */,
 				F10A18A62260069F00DBAD92 /* Assets.xcassets */,
 				F10A18A82260069F00DBAD92 /* LaunchScreen.storyboard */,
@@ -137,7 +136,7 @@
 		F10A18CD2260085E00DBAD92 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F10A18A12260069E00DBAD92 /* ViewController.swift */,
+				F10A18A12260069E00DBAD92 /* MediaContentListController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -148,6 +147,23 @@
 				F10A18CE22600A4100DBAD92 /* MediaContent.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F10A18D7226011D500DBAD92 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F10A18D122600B1800DBAD92 /* Request.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F10A18D8226011E300DBAD92 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				F10A18D322600B6400DBAD92 /* MediaContentRequest.swift */,
+				F10A18D522600BFF00DBAD92 /* ApiClient.swift */,
+			);
+			path = APIManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F10A18A22260069E00DBAD92 /* ViewController.swift in Sources */,
+				F10A18A22260069E00DBAD92 /* MediaContentListController.swift in Sources */,
 				F10A18D222600B1800DBAD92 /* Request.swift in Sources */,
 				F10A18D422600B6400DBAD92 /* MediaContentRequest.swift in Sources */,
 				F10A18A02260069E00DBAD92 /* AppDelegate.swift in Sources */,

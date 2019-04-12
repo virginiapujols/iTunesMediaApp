@@ -9,7 +9,7 @@
 import UIKit
 
 struct MediaContentRequest: Request {
-    typealias Response = MediaContent
+    typealias Response = MediaResponse
     var path: String
     
     init(type: String) {

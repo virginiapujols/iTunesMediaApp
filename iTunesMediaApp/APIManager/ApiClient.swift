@@ -12,7 +12,7 @@ struct ApiClient {
     let baseURL = "https://rss.itunes.apple.com/api/v1/us"
     let session = URLSession.shared
     
-    func getAllMediaContent<T:Request>(_ request:T, completion: @escaping ([Decodable]) -> Void) {
+    func getAllMediaContent<T:Request>(_ request:T, completion: @escaping (Decodable) -> Void) {
         guard let url = URL(string: baseURL + request.path) else { return }
         let urlRequest = URLRequest(url: url)
         
@@ -23,8 +23,9 @@ struct ApiClient {
             }
             
             do {
-                let decodedJson = try JSONDecoder().decode([T.Response].self, from: data)
-                completion(decodedJson)
+                let decodedJson = try JSONDecoder().decode(T.Response.self, from: data)
+                guard let response = decodedJson as? MediaResponse else { return }
+                completion(response.feed)
             } catch {
                 print("Error getting media content: \(error.localizedDescription)")
             }
